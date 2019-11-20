@@ -1,0 +1,18 @@
+python is interactive
+to start terminal->we can start python using terminal also
+$ ----denotes terminal prompt
+In [1]:---------->indicates code must be written in this prompt itselfs
+
+
+what is ipython:it is an enhanced python interpreter-------------->convenient functionality
+Ctrl+D
+
+
+
+
+anything in quotes '   ' is string
+clf-------------clearing of plot area
+
+
+plot?--------------------documentation
+plot??---------------------------source code of plot

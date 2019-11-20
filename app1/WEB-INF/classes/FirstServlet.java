@@ -1,0 +1,41 @@
+import java.io.*;
+import javax.servlet.Servlet;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+public class FirstServlet implements Servlet
+{
+	static
+	{
+		System.out.println("Servlet Loading into the memory");
+	}
+	public FirstServlet()
+	{
+		System.out.println("Servlet Instantiation dc is called");
+	}
+	public void init(ServletConfig config)throws ServletException
+	{
+		System.out.println("init() method is called");
+	}
+	public void service(ServletRequest req,ServletResponse res)throws IOException,ServletException
+	{
+		res.setContentType("text/html");
+		System.out.println("this is service method");
+		PrintWriter pw=res.getWriter();
+		pw.println("<h1>hello browser this is the response");
+		System.out.println("\nservice method is called");
+	}
+	public void destroy()
+	{
+		System.out.println("\n destroy method id called");
+	}
+	public ServletConfig getServletConfig()
+	{
+		return null;
+	}
+	public String getServletInfo()
+	{
+		return "this is for getservlet info";
+	}
+}
